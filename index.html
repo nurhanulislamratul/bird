@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Container Queries <span>&</span> Birds</h1>
+<div data-layout="content list-filters">
+  <form action="." method="GET" data-form="bird-filters">
+    <div data-section="options">
+      <fieldset data-set="bird-type">
+        <legend data-heading>Type of Bird</legend>
+        <div data-fieldstyle="inline button">
+          <div data-radio-type="oddbird">
+            <input data-radio="input" type="radio" name="type" value="odd" id="type_1" checked="">
+            <label for="type_1" data-radio="option">
+              <span class="label-text">OddBirds</span>
+            </label>
+          </div>
+          <div data-radio-type="allbirds">
+            <input data-radio="input" type="radio" name="type" value="All" id="type_2" checked="">
+            <label for="type_2" data-radio="option">
+              <span class="label-text">All Birds</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-heading>Bird Size</legend>
+        <div data-fieldstyle="checkbox list">
+          <label for="small">
+            <input type="checkbox" name="size" value="small" id="small">
+            Small
+          </label>
+          <label for="medium">
+            <input type="checkbox" name="size" value="medium" id="medium">
+            Medium
+          </label>
+          <label for="large">
+            <input type="checkbox" name="size" value="large" id="large">
+            Large
+          </label>
+        </div>
+      </fieldset>
+      <noscript><input type="submit"></noscript>
+    </div>
+
+    <div data-section="results">
+      <ul data-list="birds">
+        <li data-item="bird" data-bird-size="medium" data-bird-type="odd">
+          <img src="Images/owl.jpg" />
+          Owl
+        </li>
+        <li data-item="bird" data-bird-size="small" data-bird-type="all">
+          <img src="Images/bluejay.jpg" />
+          Blue Jay
+        </li>
+        <li data-item="bird" data-bird-size="large" data-bird-type="odd">
+          <img src="Images/heron.jpg" />
+          Heron
+        </li>
+        <li data-item="bird" data-bird-size="small" data-bird-type="all">
+          <img src="Images/finch.jpg" />
+          Finch
+        </li>
+        <li data-item="bird" data-bird-size="medium" data-bird-type="all">
+          <img src="Images/pelican.jpg" />
+          Pelican
+        </li>
+        <li data-item="bird" data-bird-size="large" data-bird-type="odd">
+          <img src="Images/emu.jpg" />
+          Emu
+        </li>
+        <li data-item="bird" data-bird-size="large" data-bird-type="odd">
+          <img src="Images/penguin.jpg" />
+          Penguin
+        </li>
+        <li data-item="bird" data-bird-size="small" data-bird-type="all">
+          <img src="Images/woodpecker.jpg" />
+          Woodpecker
+        </li>
+        <li data-item="bird" data-bird-size="medium" data-bird-type="all">
+          <img src="Images/bird1.jpg" />
+          Toucan
+        </li>
+        <li data-item="bird" data-bird-size="small" data-bird-type="all">
+          <img src="Images/cardinal.jpg" />
+          Cardinal
+        </li>
+        <li data-item="bird" data-bird-size="large" data-bird-type="odd">
+          <img src="Images/flamingo.jpg" />
+          Flamingo
+        </li>
+        <li data-item="bird" data-bird-size="small" data-bird-type="odd">
+          <img src="Images/hummingbird.jpg" />
+          Hummingbird
+        </li>
+        <li data-item="bird" data-bird-size="medium" data-bird-type="all">
+          <img src="Images/hawk.jpg" />
+          Hawk
+        </li>
+        <li data-item="bird" data-bird-size="medium" data-bird="parrot" data-bird-type="all">
+          <img src="Images/parrot.jpg" />
+          Parrot
+        </li>
+        <li data-item="bird" data-bird-size="medium" data-bird-type="odd">
+          <img src="Images/puffin.jpg" />
+          Puffin
+        </li>
+        <li data-item="bird" data-bird-size="medium" data-bird-type="odd">
+          <img src="Images/peacock.jpg" />
+          Peacock
+        </li>
+        <li data-item="bird" data-bird-size="large" data-bird-type="all">
+          <img src="Images/eagle.jpg" />
+          Eagle
+        </li>
+        <li data-item="bird" data-bird-size="small" data-bird-type="all">
+          <img src="Images/warbler.jpg" />
+          Warbler
+        </li>
+        <li data-item="bird" data-bird-size="large" data-bird-type="odd">
+          <img src="Images/cassowary.jpg" />
+          Cassowary
+        </li>
+        <li data-item="bird" data-bird-size="medium" data-bird-type="all">
+          <img src="Images/duck.jpg" />
+          Duck
+        </li>
+      </ul>
+    </div>
+  </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
